@@ -5,41 +5,32 @@ import { MapPin, Phone, Clock, Mail } from 'lucide-react';
 const Location = () => {
   const contactInfo = [
     {
-      icon: <MapPin className="w-6 h-6 text-blue-500" />,
+      icon: <MapPin className="w-6 h-6 text-gray-700" />,
       title: "Our Location",
-      details: "1234 Luxury Avenue, Beverly Hills, CA 90210"
+      details: "1/96 Hoxton Park Rd, Liverpool NSW 2170, Australia"
     },
     {
-      icon: <Phone className="w-6 h-6 text-blue-500" />,
+      icon: <Phone className="w-6 h-6 text-gray-700" />,
       title: "Phone Number",
-      details: "+1 (555) 123-4567"
+      details: "(02) 9821 1102"
     },
     {
-      icon: <Clock className="w-6 h-6 text-blue-500" />,
+      icon: <Clock className="w-6 h-6 text-gray-700" />,
       title: "Working Hours",
-      details: "Mon-Sat: 8AM - 7PM | Sunday: 9AM - 5PM"
+      details: "Mon-Fri: 8AM - 5PM | Sat-Sun: 7AM - 5PM"
     },
+    
     {
-      icon: <Mail className="w-6 h-6 text-blue-500" />,
+      icon: <Mail className="w-6 h-6 text-gray-700" />,
       title: "Email",
-      details: "info@premiumcarwash.com"
+      details: "info@thecarwashcafe.com"
     }
   ];
 
   return (
-    <div className="relative bg-black py-24">
-      {/* Background image with overlay */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-black to-black/70 z-10" />
-        <img 
-          src="/api/placeholder/1920/1080" 
-          alt="Car wash facility" 
-          className="w-full h-full object-cover"
-        />
-      </div>
-
+    <div className="relative bg-gray-50 py-20">
       <div className="container mx-auto px-4 relative z-10">
-        <div className="flex flex-col lg:flex-row gap-16">
+        <div className="flex flex-col lg:flex-row gap-12">
           {/* Left side: location details */}
           <motion.div 
             className="flex-1"
@@ -48,29 +39,29 @@ const Location = () => {
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-bold mb-6">OUR <span className="text-blue-500">LOCATION</span></h2>
-            <p className="text-gray-400 mb-8">
+            <h2 className="text-4xl font-bold mb-6 text-gray-800">OUR LOCATION</h2>
+            <p className="text-gray-600 mb-8">
               Located in the heart of Beverly Hills, our state-of-the-art facility offers convenient access
               to premium car detailing services. We've designed our space to provide comfort and luxury
               while your vehicle receives the attention it deserves.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {contactInfo.map((item, index) => (
                 <div key={index} className="flex items-start">
                   <div className="mr-4 mt-1">
                     {item.icon}
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">{item.title}</h3>
-                    <p className="text-gray-400">{item.details}</p>
+                    <h3 className="font-semibold text-lg mb-1 text-gray-800">{item.title}</h3>
+                    <p className="text-gray-600">{item.details}</p>
                   </div>
                 </div>
               ))}
             </div>
           </motion.div>
 
-          {/* Right side: map or image */}
+          {/* Right side: map with iframe */}
           <motion.div 
             className="flex-1"
             initial={{ opacity: 0, x: 20 }}
@@ -78,13 +69,19 @@ const Location = () => {
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
           >
-            <div className="bg-gray-800 rounded-lg overflow-hidden h-full min-h-64 flex items-center justify-center">
-              {/* Placeholder for map - in production replace with actual map component */}
-              <div className="p-8 text-center">
-                <MapPin className="w-16 h-16 text-blue-500 mx-auto mb-4" />
-                <p className="text-xl font-medium">Map Placeholder</p>
-                <p className="text-gray-400 mt-2">Interactive map would be displayed here</p>
-              </div>
+            <div className="rounded-lg overflow-hidden h-full shadow-sm border border-gray-200">
+              {/* Google Maps iframe - replace URL with actual location */}
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4125.222752207306!2d150.90611719999998!3d-33.9276591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b1294533e2f7615%3A0x53e3aee34ef98da6!2sCar%20Wash%20Cafe!5e0!3m2!1sen!2slk!4v1743577229341!5m2!1sen!2slk" 
+                width="100%" 
+                height="450" 
+                style={{ border: 0 }} 
+                allowFullScreen="" 
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Car Wash Cafe Location"
+                className="w-full h-full min-h-64"
+              ></iframe>
             </div>
           </motion.div>
         </div>

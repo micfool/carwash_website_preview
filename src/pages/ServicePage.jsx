@@ -1,52 +1,55 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Droplet, Shield, Star, Car, Clock, CheckCircle } from 'lucide-react';
+import { Droplet, Shield, Star, Car, Clock, CheckCircle, Wind, Sparkles } from 'lucide-react';
+import { TbSpray } from "react-icons/tb";
+
+import serviceBack from "../images/serviceBack.jpg"
 
 const ServicePage = () => {
   const [activeService, setActiveService] = useState(null);
   
   const services = [
     {
-      icon: <Car className="w-12 h-12 text-blue-500" />,
-      title: "Exterior Detailing",
-      description: "Complete exterior cleaning using premium products for a mirror-like finish. Our process includes hand washing, clay bar treatment, paint decontamination, and premium wax application.",
-      image: "https://cdn-ilckkpn.nitrocdn.com/slSXCZwLmnhvkSOppRRsconIrsVFILev/assets/images/optimized/rev-da87e36/apexautopros.com/wp-content/uploads/2025/03/DSC00123.jpg",
-      color: "from-blue-600 to-blue-400"
+      icon: <TbSpray className="w-12 h-12 text-gray-700" />,
+      title: "Premium Wash",
+      description: "Thorough exterior cleaning with high-quality products for a spotless shine. Our process includes hand washing, foam application, gentle mitt cleaning, and premium wax for lasting protection.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrcpcQDZxHC8vNGEPc8pGkV1zku5epYp2LJA&s",
+      color: "from-gray-700 to-gray-500"
     },
     {
-      icon: <Star className="w-12 h-12 text-purple-500" />,
-      title: "Interior Detailing",
-      description: "Deep cleaning of all interior surfaces, leaving your cabin fresh and pristine. We meticulously clean every corner, from air vents to seat crevices, ensuring a spotless interior.",
-      image: "https://cavallistables.com/wp-content/uploads/2020/03/luxury-car-detailing-1200x675.jpg",
-      color: "from-purple-600 to-purple-400"
+      icon: <Sparkles className="w-12 h-12 text-gray-700" />,
+      title: "Interior Refresh",
+      description: "Deep cleaning of all cabin surfaces, leaving your interior fresh and sanitized. We meticulously clean every corner, from air vents to seat crevices, ensuring a spotless interior.",
+      image: "https://cdn.shopify.com/s/files/1/0742/8938/1681/files/Car_Interior_Restoration.png?v=1738762710",
+      color: "from-gray-700 to-gray-500"
     },
     {
-      icon: <Shield className="w-12 h-12 text-teal-500" />,
-      title: "Ceramic Coating",
-      description: "Long-lasting protection against environmental contaminants and UV damage. Our ceramic coating creates a hydrophobic layer that repels water, dirt, and harmful elements.",
-      image: "https://img.freepik.com/premium-photo/process-pouring-ceramic-liquid-from-bottle-sponge-apply-protective-nano-layer-car-detailing-service-worker-applies-ceramic-protective-liquid-sponge-closeup_255847-7833.jpg?semt=ais_hybrid",
-      color: "from-teal-600 to-teal-400"
+      icon: <Shield className="w-12 h-12 text-gray-700" />,
+      title: "Protective Coating",
+      description: "Advanced wax and sealants that guard against environmental damage. Our protective treatments create a hydrophobic layer that repels water, dirt, and harmful elements.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSidlEjVtxM_t_FolZzbqtQ-r3yiVazCu5m2w&s",
+      color: "from-gray-700 to-gray-500"
     },
     {
-      icon: <Droplet className="w-12 h-12 text-red-500" />,
-      title: "Paint Correction",
-      description: "Professional removal of swirls, scratches and imperfections from your paint. Our multi-stage correction process restores your vehicle's finish to a showroom-quality shine.",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtq_i0TuQsClg-80K86dvhZAK5n4om_DiFfg&s",
-      color: "from-red-600 to-red-400"
+      icon: <Droplet className="w-12 h-12 text-gray-700" />,
+      title: "Paint Enhancement",
+      description: "Professional treatment to restore gloss and remove minor scratches. Our multi-stage correction process restores your vehicle's finish to a showroom-quality shine.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROSu_4CmSH7zYI0Bq7WimYW80r-fqtvz5dSA&s",
+      color: "from-gray-700 to-gray-500"
     },
     {
-      icon: <Clock className="w-12 h-12 text-amber-500" />,
+      icon: <Clock className="w-12 h-12 text-gray-700" />,
       title: "Express Services",
-      description: "Quality detailing on a tight schedule with our efficient express packages. Get professional results when you're in a hurry with our streamlined detailing process.",
-      image: "https://c4.wallpaperflare.com/wallpaper/463/1018/390/car-car-washes-wallpaper-preview.jpg",
-      color: "from-amber-600 to-amber-400"
+      description: "Quick but thorough cleaning options when you're on a tight schedule. Get professional results when you're in a hurry with our streamlined detailing process.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbPMruigfDLhIdpQ4AOQ-1aZsOS9lcB_eNKQ&s",
+      color: "from-gray-700 to-gray-500"
     },
     {
-      icon: <CheckCircle className="w-12 h-12 text-emerald-500" />,
-      title: "Maintenance Plans",
-      description: "Regular care packages to keep your vehicle in showroom condition year-round. Our scheduled maintenance plans ensure your vehicle always looks its best with consistent care.",
-      image: "https://wallpapers.com/images/hd/car-repair-1000-x-666-wallpaper-mm8kebd84e38p0em.jpg",
-      color: "from-emerald-600 to-emerald-400"
+      icon: <Wind className="w-12 h-12 text-gray-700" />,
+      title: "Membership Plans",
+      description: "Regular care packages to keep your vehicle immaculate throughout the year. Our scheduled maintenance plans ensure your vehicle always looks its best with consistent care.",
+      image: "https://assets.goaaa.com/image/upload/w_iw,h_ih,c_fit,q_auto:best,f_auto/v1713486910/infographic_all_cars_transparent_closer.png",
+      color: "from-gray-700 to-gray-500"
     }
   ];
 
@@ -100,37 +103,62 @@ const ServicePage = () => {
   };
 
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div className="bg-white text-gray-800 min-h-screen">
       {/* Hero Section */}
       <div className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/50 to-black z-10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/10 to-white/30 z-10" />
           <img 
-            src="https://4kwallpapers.com/images/wallpapers/rolls-royce-boat-tail-luxury-cars-2021-5k-8k-6016x3384-6702.jpg" 
+            src={serviceBack} 
             alt="Luxury car detailing" 
             className="w-full h-full object-cover"
           />
         </div>
         
-        <div className="container mx-auto px-4 z-20">
+        <div className="container mx-auto px-6 z-20">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="text-center"
+            className="max-w-5xl"
           >
-            <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              Premium Auto <span className="text-blue-500">Detailing</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-10">
-              Experience the ultimate transformation for your vehicle with our professional detailing services
-            </p>
-            <motion.button
+            <motion.div 
+              className="flex flex-col mb-8"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8 }}
+            >
+              {/* Simplified heading */}
+              <div className="overflow-hidden">
+                <motion.h1 
+                  className="text-4xl md:text-5xl xl:text-9xl font-bold"
+                  initial={{ y: 40 }}
+                  animate={{ y: 0 }}
+                  transition={{ delay: 0.2, duration: 0.7 }}
+                >
+                  OUR SERVICES
+                </motion.h1>
+              </div>
+            </motion.div>
+            
+            <motion.p 
+              className="text-lg md:text-xl xl:text-2xl font-bold text-gray-900 max-w-lg mb-8"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6, duration: 0.5 }}
+            >
+              Professional detailing tailored for discerning clients
+            </motion.p>
+            
+            <motion.button 
+              className="bg-gray-800 hover:bg-gray-700 text-white py-3 px-8 rounded-md text-lg font-medium transition-colors duration-300"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.8, duration: 0.5 }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-md text-lg font-medium transition-colors"
             >
-              Book Now
+             CALL NOW
             </motion.button>
           </motion.div>
         </div>
@@ -145,7 +173,7 @@ const ServicePage = () => {
             animate={{ y: [0, 10, 0] }}
             transition={{ repeat: Infinity, duration: 2 }}
           >
-            <svg className="w-10 h-10 text-white/80" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <svg className="w-10 h-10 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
             </svg>
           </motion.div>
@@ -153,71 +181,60 @@ const ServicePage = () => {
       </div>
 
       {/* Services Introduction */}
-      <div className="container mx-auto px-4 py-20">
+      <div className="container mx-auto px-6 py-20">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="text-center mb-20"
+          className="text-center "
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Our Premium <span className="text-blue-500">Services</span>
+          <h2 className="text-4xl font-bold mb-6">
+            Premium <span className="text-gray-600">Car Care</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             We combine cutting-edge technology with meticulous attention to detail, 
             ensuring your vehicle receives the finest care possible.
           </p>
         </motion.div>
 
         {/* Service Cards */}
-        <motion.div
+        {/* <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {services.map((service, index) => (
             <motion.div
               key={index}
               variants={itemVariants}
               whileHover={{ 
-                y: -10,
+                y: -5,
+                boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
                 transition: { duration: 0.3 }
               }}
-              className="bg-gray-900 rounded-xl overflow-hidden shadow-lg"
+              className="bg-white p-8 rounded-lg border border-gray-100 hover:border-gray-300 transition-all duration-300 shadow-sm"
               onClick={() => setActiveService(index)}
             >
-              <div className={`h-48 relative overflow-hidden`}>
-                <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-80`}></div>
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-full object-cover mix-blend-overlay"
-                />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="bg-black/30 p-4 rounded-full">
-                    {service.icon}
-                  </div>
-                </div>
+              <div className="mb-6 rounded-full bg-gray-100 p-4 w-16 h-16 flex items-center justify-center">
+                {service.icon}
               </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3">{service.title}</h3>
-                <p className="text-gray-400">
-                  {service.description.substring(0, 100)}...
-                </p>
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="mt-6 px-4 py-2 border border-blue-500 text-blue-500 rounded-md hover:bg-blue-500 hover:text-white transition-colors"
-                >
-                  Learn More
-                </motion.button>
-              </div>
+              <h3 className="text-xl font-bold mb-3 text-gray-800">{service.title}</h3>
+              <p className="text-gray-600">
+                {service.description.substring(0, 100)}...
+              </p>
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="mt-6 px-4 py-2 border border-gray-800 text-gray-800 rounded-md hover:bg-gray-800 hover:text-white transition-colors"
+              >
+                Learn More
+              </motion.button>
             </motion.div>
           ))}
-        </motion.div>
+        </motion.div> */}
       </div>
 
       {/* Featured Service (Detailed View) */}
@@ -228,9 +245,9 @@ const ServicePage = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className={`py-28 ${index % 2 === 0 ? 'bg-gray-900' : 'bg-black'}`}
+          className={`py-28 ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}
         >
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-6">
             <div className="flex flex-col lg:flex-row items-center gap-12">
               <motion.div 
                 variants={textVariants}
@@ -240,17 +257,19 @@ const ServicePage = () => {
                 className="w-full lg:w-1/2"
               >
                 <div className="flex items-center gap-4 mb-6">
-                  {service.icon}
-                  <h3 className="text-3xl md:text-4xl font-bold">{service.title}</h3>
+                  <div className="bg-gray-100 p-4 rounded-full">
+                    {service.icon}
+                  </div>
+                  <h3 className="text-3xl font-bold text-gray-800">{service.title}</h3>
                 </div>
-                <p className="text-xl text-gray-300 mb-8">
+                <p className="text-xl text-gray-600 mb-8">
                   {service.description}
                 </p>
                 <ul className="space-y-4 mb-8">
                   {[1, 2, 3].map((item) => (
                     <li key={item} className="flex items-start gap-3">
-                      <CheckCircle className="w-6 h-6 text-blue-500 mt-1" />
-                      <span className="text-gray-300">
+                      <CheckCircle className="w-6 h-6 text-gray-700 mt-1" />
+                      <span className="text-gray-600">
                         Premium feature {item} of our {service.title.toLowerCase()} service
                       </span>
                     </li>
@@ -259,7 +278,7 @@ const ServicePage = () => {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-md text-white font-medium transition-colors"
+                  className="px-8 py-3 bg-gray-800 hover:bg-gray-700 rounded-md text-white font-medium transition-colors"
                 >
                   Book This Service
                 </motion.button>
@@ -273,11 +292,11 @@ const ServicePage = () => {
                 className="w-full lg:w-1/2"
               >
                 <div className="relative">
-                  <div className={`absolute -inset-4 bg-gradient-to-br ${service.color} rounded-xl opacity-30 blur-lg`}></div>
+                  <div className="absolute -inset-4 bg-gradient-to-br from-gray-200 to-gray-100 rounded-xl opacity-50 blur-lg"></div>
                   <img 
                     src={service.image} 
                     alt={service.title}
-                    className="w-full h-auto rounded-xl relative z-10"
+                    className="w-full h-auto rounded-lg relative z-10"
                   />
                 </div>
               </motion.div>
@@ -289,42 +308,36 @@ const ServicePage = () => {
       {/* Call to Action */}
       <div className="relative py-24">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/70 z-10" />
-          <img src="https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg?cs=srgb&dl=pexels-mikebirdy-3729464.jpg&fm=jpg" alt="Luxury car" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/10 to-white/70 z-10" />
+          <img src="/api/placeholder/1920/1080" alt="Luxury car" className="w-full h-full object-cover" />
         </div>
         
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-6 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
-            className="text-center max-w-3xl mx-auto"
+            className="max-w-3xl"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Ready to Transform Your <span className="text-blue-500">Vehicle</span>?
+              Ready for the <span className="text-gray-700">Premium Experience</span>?
             </h2>
-            <p className="text-xl text-gray-300 mb-10">
-              Schedule your appointment today and experience the difference professional detailing makes.
+            <p className="text-xl text-gray-800 mb-10">
+              Schedule your appointment today and discover what makes The Car Wash Cafe different.
             </p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.3 }}
               viewport={{ once: true }}
-              className="flex flex-col sm:flex-row gap-4 justify-center"
+              className="flex flex-col sm:flex-row gap-4"
             >
+              
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-md text-white font-medium transition-colors"
-              >
-                Book Now
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-3 border border-white hover:bg-white/10 rounded-md text-white font-medium transition-colors"
+                className="px-8 py-3 border border-gray-800 hover:bg-gray-100 rounded-md text-gray-800 font-medium transition-colors duration-300"
               >
                 Contact Us
               </motion.button>

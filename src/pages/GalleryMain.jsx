@@ -1,53 +1,64 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
+import Img1 from "../images/others/1.jpg"
+import Img2 from "../images/others/2.jpg"
+import Img3 from "../images/others/3.jpg"
+import Img4 from "../images/others/4.jpg"
+import Img5 from "../images/others/5.jpg"
+import Img6 from "../images/others/6.jpg"
+import Img7 from "../images/others/7.jpg"
+import Img8 from "../images/others/8.jpg"
+
+
+
 const Gallery = () => {
   // Sample gallery images with varied dimensions
   const images = [
     {
-      src: "https://picture.lk/files/preview/1280x717/11722434733jr0zep6ag3ejrux9lnjpz1n3h4cn7bzjdiebbhp0ulltrdawcdkpoziilanb8sdjrckphomou90suq0yi92r7lckaw3dlfwcfap6.jpg",
+      src: Img1,
       alt: "Luxury car detailing process",
       caption: "Premium Exterior Detailing",
       size: "large", // large image
     },
     {
-      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYxtP9NcxkFVowWPWimHT5Yuhl8-ta02EOQQ&s",
+      src: Img2,
       alt: "Interior cleaning process",
       caption: "Meticulous Interior Cleaning",
       size: "tall", // tall image
     },
     {
-      src: "https://www.pixground.com/wp-content/uploads/2023/08/Bugatti-Chiron-Profilee-4K-Wallpaper-1081x608.jpg",
+      src: Img3,
       alt: "Ceramic coating application",
       caption: "Professional Ceramic Coating",
       size: "small", // small image
     },
     {
-      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3XmaNj-7m3GcdIX39riu1I0yTY1rKd1NOTw&s",
+      src: Img4,
       alt: "Final inspection",
       caption: "Final Quality Inspection",
       size: "wide", // wide image
     },
     {
-      src: "https://wallpapers.com/images/hd/4k-yellow-luxury-car-in-desert-711h9vj28bzygq1e.jpg",
+      src: Img5,
       alt: "Paint correction process",
       caption: "Paint Correction",
       size: "small", // small image
     },
     {
-      src: "https://c4.wallpaperflare.com/wallpaper/412/867/691/car-bmw-bmw-i8-cyan-wallpaper-preview.jpg",
+      src: Img6,
       alt: "Engine detailing",
       caption: "Engine Bay Detailing",
       size: "tall", // tall image
     },
     {
-      src: "https://images4.alphacoders.com/103/1034978.jpg",
+      src: Img7,
       alt: "Wheel and tire detailing",
       caption: "Wheel & Tire Treatment",
       size: "large", // large image
     },
     {
-      src: "https://c4.wallpaperflare.com/wallpaper/330/590/338/car-luxury-cars-interior-wallpaper-preview.jpg",
+      src: Img8,
       alt: "Full vehicle protection",
       caption: "Complete Protection Package",
       size: "wide", // wide image
@@ -72,9 +83,9 @@ const Gallery = () => {
   };
 
   return (
-    <div className="bg-black py-24 relative">
+    <div className="bg-white py-24 relative">
       {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black to-black/90 z-0" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white to-white/90 z-0" />
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
@@ -85,11 +96,11 @@ const Gallery = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">
-            OUR <span className="text-blue-500">GALLERY</span>
+          <h2 className="text-4xl font-bold mb-4 text-gray-800">
+            OUR <span className="text-gray-900">GALLERY</span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            Experience our premium detailing process through our gallery. Every
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Experience our premium detailing services through our gallery. Every
             vehicle receives our signature attention to detail.
           </p>
         </motion.div>
@@ -101,7 +112,7 @@ const Gallery = () => {
               key={index}
               className={`${getGridClasses(
                 image.size
-              )} relative overflow-hidden rounded-lg group cursor-pointer`}
+              )} relative overflow-hidden rounded-lg group cursor-pointer shadow-md`}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -118,7 +129,7 @@ const Gallery = () => {
                   alt={image.alt}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                   <p className="text-white font-medium text-lg">
                     {image.caption}
@@ -133,7 +144,7 @@ const Gallery = () => {
       {/* Lightbox */}
       {selectedImage && (
         <motion.div
-          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 bg-gray-900/90 z-50 flex items-center justify-center p-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -147,13 +158,13 @@ const Gallery = () => {
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.3 }}
             />
-            <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
+            <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-gray-900 to-transparent">
               <p className="text-white text-xl font-medium">
                 {selectedImage.caption}
               </p>
             </div>
             <button
-              className="absolute top-4 right-4 text-white bg-blue-600 rounded-full p-2 hover:bg-blue-700 transition-colors"
+              className="absolute top-4 right-4 text-white bg-gray-800 hover:bg-gray-700 rounded-full p-2 transition-colors"
               onClick={() => setSelectedImage(null)}
             >
               <svg

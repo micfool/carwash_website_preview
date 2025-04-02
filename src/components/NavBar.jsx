@@ -23,7 +23,6 @@ const NavBar = () => {
   const navLinks = [
     { title: "Home", href: "/" },
     { title: "Services", href: "/servicepage" },
-    { title: "About", href: "/aboutus" },
     { title: "Gallery", href: "/gallery" },
     { title: "Contact", href: "/contact" },
   ];
@@ -31,7 +30,7 @@ const NavBar = () => {
   return (
     <motion.nav
       className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-black/80 backdrop-blur-lg py-2" : "bg-transparent py-6"
+        scrolled ? "bg-black/80 backdrop-blur-lg py-2" : "bg-black/50 py-4 "
       }`}
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -44,18 +43,30 @@ const NavBar = () => {
             className="flex items-center"
             whileHover={{ scale: 1.05 }}
           >
-            <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-600">
-              ELITE<span className="text-white">WASH</span>
+            <span
+              className={`text-2xl font-bold  ${
+                scrolled
+                  ? "text-white"
+                  : " text-blue-800"
+              }`}
+            >
+              TheCarWash<span className={` ${
+                scrolled
+                  ? "text-blue-600"
+                  : " text-white"
+              }`}>CAFE</span>
             </span>
           </motion.div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-10">
+          <div className="hidden lg:flex items-center space-x-10 ">
             {navLinks.map((link, index) => (
               <div key={index} className="relative">
                 <a
                   href={link.href}
-                  className="text-gray-300 hover:text-blue-400 transition-colors duration-300 font-medium relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-400 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full"
+                  className={`text-gray-200 text-2xl  hover:text-blue-600 transition-colors duration-300 font-medium relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-blue-400 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full ${
+                    scrolled ? "text-white" : ""
+                  }`}
                 >
                   {link.title}
                 </a>
@@ -70,7 +81,7 @@ const NavBar = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Book Now
+              Call Now
             </motion.button>
           </div>
 
@@ -115,7 +126,7 @@ const NavBar = () => {
               ))}
               <div className="px-4 py-3">
                 <motion.button className="w-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-3 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
-                  Book Now
+                  Call Now
                 </motion.button>
               </div>
             </div>
