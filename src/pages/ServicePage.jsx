@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Droplet, Shield, Star, Car, Clock, CheckCircle, Wind, Sparkles } from 'lucide-react';
 import { TbSpray } from "react-icons/tb";
 
-import serviceBack from "../images/serviceBack.jpg"
+import serviceBack from "../images/serviceback.jpg"
 
 const ServicePage = () => {
   const [activeService, setActiveService] = useState(null);
