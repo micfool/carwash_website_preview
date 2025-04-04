@@ -7,7 +7,7 @@ import Services from '../components/Services ';
 import Location from '../components/Location ';
 import Testimonials from '../components/Testimonials ';
 
-import BackImg from "../images/carcafe.jpg"
+import BackImg from "../images/templatebackground.png"
 
 const Home = () => {
   return (
@@ -41,7 +41,7 @@ const Home = () => {
                   animate={{ y: 0 }}
                   transition={{ delay: 0.2, duration: 0.7 }}
                 >
-                  THE CAR WASH CAFE
+                  YOUR BUSINESS NAME HERE
                 </motion.h1>
               </div>
             </motion.div>

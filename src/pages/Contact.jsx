@@ -49,19 +49,19 @@ const Contact = () => {
     {
       icon: <Phone className="h-6 w-6 text-gray-800" />,
       title: "Phone",
-      details: "(02) 9821 1102",
+      details: "YOUR BUSINESS NUMBER HERE",
       color: "bg-gradient-to-r from-gray-200 to-white",
     },
     {
       icon: <Mail className="h-6 w-6 text-gray-800" />,
       title: "Email",
-      details: "info@thecarwashcafe.com",
+      details: "YOUR BUSINESS EMAIL HERE",
       color: "bg-gradient-to-r from-gray-200 to-white",
     },
     {
       icon: <MapPin className="h-6 w-6 text-gray-800" />,
       title: "Location",
-      details: "1/96 Hoxton Park Rd, Liverpool NSW 2170, Australia",
+      details: "YOUR BUSINESS ADDRESS HERE",
       color: "bg-gradient-to-r from-gray-200 to-white",
     },
   ];
@@ -147,7 +147,7 @@ const Contact = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-gray-800/50 to-transparent opacity-50"></div>
               <div className="absolute bottom-0 left-0 p-6">
                 <h3 className="text-4xl font-bold text-white mb-2">
-                The Car Wash Cafe
+                YOUR BUSINESS NAME HERE
                 </h3>
                 <p className="text-gray-200 text-lg">
                   Experience the luxury your car deserves

@@ -50,11 +50,11 @@ const NavBar = () => {
                   : " text-blue-800"
               }`}
             >
-              TheCarWash<span className={` ${
+              YOUR BUSINESS NAME <span className={` ${
                 scrolled
                   ? "text-blue-600"
                   : " text-white"
-              }`}>CAFE</span>
+              }`}>HERE</span>
             </span>
           </motion.div>
 
