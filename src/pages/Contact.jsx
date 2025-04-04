@@ -414,7 +414,7 @@ const Contact = () => {
         >
           <div className="aspect-w-16 aspect-h-9 w-full h-96">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4125.222752207306!2d150.90611719999998!3d-33.9276591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b1294533e2f7615%3A0x53e3aee34ef98da6!2sCar%20Wash%20Cafe!5e0!3m2!1sen!2slk!4v1743577229341!5m2!1sen!2slk"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7210.7589721702225!2d151.20357349495623!3d-33.86979336316926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae14e6fff121%3A0xfe7a7407a97636de!2sSaint%20Mary&#39;s%20Cathedral!5e0!3m2!1sen!2sau!4v1743756645513!5m2!1sen!2sau"
               width="100%"
               height="100%"
               style={{ border: 0 }}
