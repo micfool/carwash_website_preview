@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company info */}
           <div>
-            <h3 className="text-2xl font-bold mb-6">THE CAR <span className="text-gray-400">WASH CAFE</span></h3>
+            <h3 className="text-2xl font-bold mb-6">YOUR BUSINESS <span className="text-gray-400">NAME HERE</span></h3>
             <p className="text-gray-400 mb-6">
               Providing premium detailing services to discerning clients since 2015. 
               We're committed to excellence in every detail.
@@ -64,15 +64,15 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <Mail className="w-5 h-5 text-gray-500 mr-3 mt-1" />
-                <span className="text-gray-400">inf0@thecarwashcafe</span>
+                <span className="text-gray-400">YOUR EMAIL HERE</span>
               </li>
               <li className="flex items-start">
                 <Phone className="w-5 h-5 text-gray-500 mr-3 mt-1" />
-                <span className="text-gray-400">(02) 9821 1102</span>
+                <span className="text-gray-400">YOUR NUMBER HERE</span>
               </li>
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 text-gray-500 mr-3 mt-1" />
-                <span className="text-gray-400">1/96 Hoxton Park Rd, Liverpool NSW 2170, Australia</span>
+                <span className="text-gray-400">YOUR ADDRESS HERE</span>
               </li>
               <li className="mt-6">
                 <button className="bg-gray-700 hover:bg-gray-600 text-white py-3 px-8 rounded-md text-lg font-medium transition-colors duration-300">
@@ -85,7 +85,7 @@ const Footer = () => {
         
         {/* Bottom copyright */}
         <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-500">
-          <p>© {currentYear} The Car Wash Cafe. All rights reserved.</p>
+          <p>© {currentYear} YOUR BUSINESS NAME HERE. All rights reserved.</p>
         </div>
       </div>
     </footer>

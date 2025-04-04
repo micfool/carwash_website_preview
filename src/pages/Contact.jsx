@@ -49,19 +49,19 @@ const Contact = () => {
     {
       icon: <Phone className="h-6 w-6 text-gray-800" />,
       title: "Phone",
-      details: "(02) 9821 1102",
+      details: "YOUR BUSINESS NUMBER HERE",
       color: "bg-gradient-to-r from-gray-200 to-white",
     },
     {
       icon: <Mail className="h-6 w-6 text-gray-800" />,
       title: "Email",
-      details: "info@thecarwashcafe.com",
+      details: "YOUR BUSINESS EMAIL HERE",
       color: "bg-gradient-to-r from-gray-200 to-white",
     },
     {
       icon: <MapPin className="h-6 w-6 text-gray-800" />,
       title: "Location",
-      details: "1/96 Hoxton Park Rd, Liverpool NSW 2170, Australia",
+      details: "YOUR BUSINESS ADDRESS HERE",
       color: "bg-gradient-to-r from-gray-200 to-white",
     },
   ];
@@ -147,7 +147,7 @@ const Contact = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-gray-800/50 to-transparent opacity-50"></div>
               <div className="absolute bottom-0 left-0 p-6">
                 <h3 className="text-4xl font-bold text-white mb-2">
-                The Car Wash Cafe
+                YOUR BUSINESS NAME HERE
                 </h3>
                 <p className="text-gray-200 text-lg">
                   Experience the luxury your car deserves
@@ -412,10 +412,9 @@ const Contact = () => {
           transition={{ duration: 0.7, delay: 0.4 }}
           viewport={{ once: true }}
         >
-        {/*<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6618.584555493141!2d151.21490764825526!3d-33.87118783827331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae14e6fff121%3A0xfe7a7407a97636de!2sSaint%20Mary&#39;s%20Cathedral!5e0!3m2!1sen!2sau!4v1743756535163!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
           <div className="aspect-w-16 aspect-h-9 w-full h-96">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6618.584555493141!2d151.21490764825526!3d-33.87118783827331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae14e6fff121%3A0xfe7a7407a97636de!2sSaint%20Mary&#39;s%20Cathedral!5e0!3m2!1sen!2sau!4v1743756535163!5m2!1sen!2sau"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4125.222752207306!2d150.90611719999998!3d-33.9276591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b1294533e2f7615%3A0x53e3aee34ef98da6!2sCar%20Wash%20Cafe!5e0!3m2!1sen!2slk!4v1743577229341!5m2!1sen!2slk"
               width="100%"
               height="100%"
               style={{ border: 0 }}
