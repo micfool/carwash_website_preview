@@ -41,7 +41,7 @@ const Home = () => {
                   animate={{ y: 0 }}
                   transition={{ delay: 0.2, duration: 0.7 }}
                 >
-                  YOUR BUSINESS NAME HERE
+                  DETAILING KARTEL
                 </motion.h1>
               </div>
             </motion.div>

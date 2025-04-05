@@ -9,6 +9,7 @@ import {
   MessageSquare,
   CheckCircle,
 } from "lucide-react";
+import image from "../images/detailing.png"
 
 const Contact = () => {
   const [formState, setFormState] = useState({
@@ -139,7 +140,7 @@ const Contact = () => {
             <div className="mb-6 relative overflow-hidden rounded-lg shadow-xl">
               <div className="w-full h-64 lg:h-80 bg-gradient-to-br from-gray-200 to-white">
                 <img
-                  src="https://c4.wallpaperflare.com/wallpaper/191/217/135/car-black-car-rolls-royce-phantom-vehicle-wallpaper-preview.jpg"
+                  src={image/*"https://c4.wallpaperflare.com/wallpaper/191/217/135/car-black-car-rolls-royce-phantom-vehicle-wallpaper-preview.jpg"*/}
                   alt="Premium Car Detailing"
                   className="w-full object-cover h-full opacity-80 mix-blend-multiply"
                 />
