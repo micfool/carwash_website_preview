@@ -7,7 +7,7 @@ import Services from '../components/Services ';
 import Location from '../components/Location ';
 import Testimonials from '../components/Testimonials ';
 
-import BackImg from "../images/templatebackground.png"
+import BackImg from "../images/templateback.jpg"
 
 const Home = () => {
   return (
@@ -41,7 +41,7 @@ const Home = () => {
                   animate={{ y: 0 }}
                   transition={{ delay: 0.2, duration: 0.7 }}
                 >
-                  DETAILING KARTEL
+                  Extreme Car Detailing Studio
                 </motion.h1>
               </div>
             </motion.div>
