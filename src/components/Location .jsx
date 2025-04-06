@@ -7,23 +7,23 @@ const Location = () => {
     {
       icon: <MapPin className="w-6 h-6 text-gray-700" />,
       title: "Our Location",
-      details: "1/96 Hoxton Park Rd, Liverpool NSW 2170, Australia"
+      details: "YOUR BUSINESS LOCATION"
     },
     {
       icon: <Phone className="w-6 h-6 text-gray-700" />,
       title: "Phone Number",
-      details: "(02) 9821 1102"
+      details: "YOUR BUSINESS PHONE"
     },
     {
       icon: <Clock className="w-6 h-6 text-gray-700" />,
       title: "Working Hours",
-      details: "Mon-Fri: 8AM - 5PM | Sat-Sun: 7AM - 5PM"
+      details: "YOUR WORKING HOURS"
     },
     
     {
       icon: <Mail className="w-6 h-6 text-gray-700" />,
       title: "Email",
-      details: "info@thecarwashcafe.com"
+      details: "YOUR BUSINESS EMAIL"
     }
   ];
 
@@ -41,7 +41,7 @@ const Location = () => {
           >
             <h2 className="text-4xl font-bold mb-6 text-gray-800">OUR LOCATION</h2>
             <p className="text-gray-600 mb-8">
-              Located in the heart of Beverly Hills, our state-of-the-art facility offers convenient access
+              Located in the heart of Sydney, our state-of-the-art facility offers convenient access
               to premium car detailing services. We've designed our space to provide comfort and luxury
               while your vehicle receives the attention it deserves.
             </p>
