@@ -41,7 +41,7 @@ const Home = () => {
                   animate={{ y: 0 }}
                   transition={{ delay: 0.2, duration: 0.7 }}
                 >
-                  Extreme Car Detailing Studio
+                  Falzon's Auto Detail Dreamscape
                 </motion.h1>
               </div>
             </motion.div>
