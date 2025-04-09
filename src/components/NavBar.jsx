@@ -50,11 +50,11 @@ const NavBar = () => {
                   : " text-blue-800"
               }`}
             >
-              Falzon's Auto <span className={` ${
+              Plateeau <span className={` ${
                 scrolled
                   ? "text-blue-600"
                   : " text-white"
-              }`}>Detail Dreamscape</span>
+              }`}>Washes</span>
             </span>
           </motion.div>
 

@@ -41,7 +41,7 @@ const Home = () => {
                   animate={{ y: 0 }}
                   transition={{ delay: 0.2, duration: 0.7 }}
                 >
-                  Falzon's Auto Detail Dreamscape
+                  Plateau Washes
                 </motion.h1>
               </div>
             </motion.div>
